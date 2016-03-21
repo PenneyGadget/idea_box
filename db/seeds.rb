@@ -11,13 +11,11 @@ class Seed
     Idea.create!([
       {
         title: "Sleeping",
-        body: "A very good idea so as to not go cray-cray.",
-        quality: 2
+        body: "A very good idea so as to not go cray-cray."
       },
       {
         title: "Eating",
-        body: "This is probably a good thing to do from time to time.",
-        quality: 1
+        body: "This is probably a good thing to do from time to time."
       },
       {
         title: "Voting",
@@ -25,18 +23,15 @@ class Seed
       },
       {
         title: "Rock Climbing",
-        body: "Only the very best idea ever.",
-        quality: 2
+        body: "Only the very best idea ever."
       },
       {
         title: "Bringing down the system",
-        body: "Imperative.",
-        quality: 2
+        body: "Imperative."
       },
       {
         title: "Putting on shoes",
-        body: "Of varied importance.",
-        quality: 1
+        body: "Of varied importance."
       },
       {
         title: "Being an insensitive jerk",
@@ -44,18 +39,15 @@ class Seed
       },
       {
         title: "Cooking",
-        body: "Yay!",
-        quality: 2
+        body: "Yay!"
       },
       {
         title: "Showering",
-        body: "Fun and rejuvenating, but not strictly necessary.",
-        quality: 1
+        body: "Fun and rejuvenating, but not strictly necessary."
       },
       {
         title: "Caffeinating",
-        body: "Adrenals say no, rest of body says yes.",
-        quality: 1
+        body: "Adrenals say no, rest of body says yes."
       }
       ])
   end
