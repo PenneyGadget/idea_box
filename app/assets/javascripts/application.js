@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap-sprockets
+
+$document.ready(function() {
+
+});
+
+var qualities = ['swill', 'plausible', 'genius'];
