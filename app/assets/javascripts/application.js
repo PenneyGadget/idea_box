@@ -15,8 +15,18 @@
 //= require_tree .
 //= require bootstrap-sprockets
 
-$document.ready(function() {
-
+$(document).ready(function() {
+  $.ajax({
+    type: 'GET',
+    url: '/api/v1/ideas.json',
+    success: function(ideas){
+      $.each(ideas, function(index, idea){
+        $('#latest-ideas').append(
+          "<div class='idea'><h3>" + idea.title + "</h3><p>" + idea.body + "</p></div>"
+        );
+      });
+    }
+  });
 });
 
 var qualities = ['swill', 'plausible', 'genius'];

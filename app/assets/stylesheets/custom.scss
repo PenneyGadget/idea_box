@@ -8,13 +8,25 @@ body {
   font-size: 5em;
   color: #DEAB2F;
   padding: 50px;
-  border-style: solid;
+  border-style: double;
   display: inline-block;
-  border-color: black;
+  border-color: #453100;
+  margin-bottom: 20px;
 }
 
 .subtext {
   font-family: 'Poiret One', cursive;
   color: #DEAB2F;
   font-size: 2em;
+}
+
+#latest-ideas {
+  font-family: 'Poiret One', cursive;
+  color: #453100;
+  border-style: double;
+  border-color: #453100;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  background-color: #F5F5DC;
 }
