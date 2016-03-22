@@ -1,4 +1,4 @@
-function getIdeas(){
+var getIdeas = function(){
   var newestIdeaID = parseInt($(".idea").first().data("id"));
 
   $.ajax({
@@ -12,4 +12,4 @@ function getIdeas(){
       });
     }
   });
-}
+};

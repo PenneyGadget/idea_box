@@ -1,4 +1,4 @@
-function createIdea(){
+var createIdea = function(){
   $('#create-idea').on('click', function(){
     var ideaTitle = $('#idea-title').val();
     var ideaDescription = $('#idea-description').val();
@@ -22,4 +22,4 @@ function createIdea(){
       }
     });
   });
-}
+};

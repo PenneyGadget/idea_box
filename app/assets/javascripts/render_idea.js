@@ -1,4 +1,4 @@
-function renderIdea(idea){
+var renderIdea = function(idea){
   $('#latest-ideas').prepend(
     "<div class='idea' idea-id='" +
     idea.id +
@@ -10,4 +10,4 @@ function renderIdea(idea){
     qualities[idea.quality] +
     "</div>"
   );
-}
+};
