@@ -17,14 +17,7 @@
 
 $(document).ready(function() {
   getIdeas();
-
-  $.ajax({
-    type: 'POST',
-    url: '/api/V1/ideas.json',
-    success: function(){
-      console.log('Winter is coming');
-    }
-  });
+  createIdea();
 });
 
 var qualities = ['swill', 'plausible', 'genius'];
