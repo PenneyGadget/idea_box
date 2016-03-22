@@ -6,10 +6,13 @@ var renderIdea = function(idea){
     idea.title +
     "</h3><p>" +
     truncate(idea.body) +
-    "</p><p>Quality: " +
+    "</p><h4><strong>This idea is: </strong>" +
     qualities[idea.quality] +
-    "</p>" +
-    "<button id='delete-idea' name='button-fetch' class='btn btn-default btn-xs'>Delete</button>" +
+    "</h4>" +
+    "<button type='button' id='upvote-idea' class='btn btn-default'><span class='glyphicon glyphicon-thumbs-up'></span></button>" +
+    "<button type='button' id='downvote-idea' class='btn btn-default'><span class='glyphicon glyphicon-thumbs-down'></span></button>" +
+    "<br><button id='delete-idea' name='button-delete' class='btn btn-default btn-xs'>Delete</button>" +
+    "<button id='edit-idea' name='button-edit' class='btn btn-default btn-xs'>Edit</button>" +
     "<hr></div>"
   );
 };

@@ -26,6 +26,7 @@ body {
   border-style: double;
   border-color: #453100;
   padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 20px;
   margin-bottom: 100px;
   background-color: #F5F5DC;
@@ -58,7 +59,12 @@ h3 {
   margin-top: 350;
 }
 
-#delete-idea {
+#delete-idea, #edit-idea, #upvote-idea, #downvote-idea {
   color: #453100;
-  font-size: 1em;
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+p {
+  font-size: 1.2em;
 }
