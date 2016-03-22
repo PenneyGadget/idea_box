@@ -1,23 +1,25 @@
-$('#create-idea').on('click', function(){
-  var ideaTitle = $('#idea-title').val();
-  var ideaDescription = $('#idea-description').val();
+function createIdea(){
+  $('#create-idea').on('click', function(){
+    var ideaTitle = $('#idea-title').val();
+    var ideaDescription = $('#idea-description').val();
 
-  var ideaParams = {
-    idea: {
-      title: ideaTitle,
-      body: ideaDescription
-    }
-  };
+    var ideaParams = {
+      idea: {
+        title: ideaTitle,
+        body: ideaDescription
+      }
+    };
 
-  $('#idea-title').val('');
-  $('#idea-description').val('');
+    $('#idea-title').val('');
+    $('#idea-description').val('');
 
-  $.ajax({
-    type: 'POST',
-    url: '/api/v1/ideas.json',
-    data: ideaParams,
-    success: function(idea){
-      renderIdea(idea);
-    }
+    $.ajax({
+      type: 'POST',
+      url: '/api/v1/ideas.json',
+      data: ideaParams,
+      success: function(idea){
+        renderIdea(idea);
+      }
+    });
   });
-});
+}
