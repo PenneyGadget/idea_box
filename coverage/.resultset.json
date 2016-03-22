@@ -1,0 +1,71 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Penney/Documents/Turing/4-module/projects/idea_box/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Penney/Documents/Turing/4-module/projects/idea_box/app/controllers/api/v1/ideas_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/Penney/Documents/Turing/4-module/projects/idea_box/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Penney/Documents/Turing/4-module/projects/idea_box/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Penney/Documents/Turing/4-module/projects/idea_box/app/models/idea.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/Penney/Documents/Turing/4-module/projects/idea_box/app/controllers/api/v1/base_controller.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1458682659
+  }
+}
