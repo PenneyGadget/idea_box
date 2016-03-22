@@ -18,6 +18,7 @@
 $(document).ready(function() {
   getIdeas();
   createIdea();
+  deleteIdea();
 });
 
 var qualities = ['swill', 'plausible', 'genius'];

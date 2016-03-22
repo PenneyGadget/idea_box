@@ -1,12 +1,9 @@
 var createIdea = function(){
   $('#create-idea').on('click', function(){
-    var ideaTitle = $('#idea-title').val();
-    var ideaDescription = $('#idea-description').val();
-
     var ideaParams = {
       idea: {
-        title: ideaTitle,
-        body: ideaDescription
+        title: $('#idea-title').val(),
+        body: $('#idea-description').val()
       }
     };
 

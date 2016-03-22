@@ -8,6 +8,8 @@ var renderIdea = function(idea){
     truncate(idea.body) +
     "</p><p>Quality: " +
     qualities[idea.quality] +
-    "</div>"
+    "</p>" +
+    "<button id='delete-idea' name='button-fetch' class='btn btn-default btn-xs'>Delete</button>" +
+    "<hr></div>"
   );
 };

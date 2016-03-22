@@ -15,6 +15,7 @@ class Api::V1::IdeasController < ApplicationController
     if @idea.save
       respond_with :api, :v1, @idea
     else
+      respond_with @idea.errors.full_messages.join(", ")
     end
   end
 
@@ -23,7 +24,7 @@ class Api::V1::IdeasController < ApplicationController
   end
 
   def destroy
-
+    respond_with Idea.find(params[:id]).destroy
   end
 
   private
