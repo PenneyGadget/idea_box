@@ -15,7 +15,7 @@ function createIdea(){
 
     $.ajax({
       type: 'POST',
-      url: '/api/v1/ideas.json',
+      url: '/api/v1/ideas',
       data: ideaParams,
       success: function(idea){
         renderIdea(idea);
