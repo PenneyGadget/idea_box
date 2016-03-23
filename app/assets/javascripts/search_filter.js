@@ -1,5 +1,5 @@
 var searchFilter = function(){
-  var $ideas = $('#latest-ideas .idea');
+  $ideas = $("#latest-ideas .idea");
   $('#search-box-field').keyup(function(){
     var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
 

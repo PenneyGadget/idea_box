@@ -10,6 +10,7 @@ var getIdeas = function(){
           renderIdea(idea);
         }
       });
+      searchFilter();
     }
   });
 };
