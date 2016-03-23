@@ -59,12 +59,18 @@ h3 {
   margin-top: 350;
 }
 
-#delete-idea, #edit-idea, #upvote-idea, #downvote-idea {
+#delete-idea, #edit-idea, #upvote-idea, #downvote-idea, #update-idea {
   color: #453100;
   font-size: 1.2em;
   margin: 5px;
 }
 
-p {
+.edit-form {
+  border-style: double;
+  border-color: #453100;
+  padding: 20px;
+}
+
+p, label {
   font-size: 1.2em;
 }
