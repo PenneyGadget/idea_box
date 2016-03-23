@@ -23,4 +23,5 @@ $(document).ready(function() {
   downvoteIdea();
   editIdea();
   updateIdea();
+  searchFilter();
 });
