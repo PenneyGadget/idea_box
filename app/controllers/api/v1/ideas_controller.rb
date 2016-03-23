@@ -20,7 +20,7 @@ class Api::V1::IdeasController < ApplicationController
   end
 
   def update
-
+    respond_with Idea.update(params[:id], idea_params)
   end
 
   def destroy

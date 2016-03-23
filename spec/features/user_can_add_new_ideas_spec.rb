@@ -13,7 +13,7 @@ RSpec.describe "User can add a new idea", type: :feature do
     expect(Idea.count).to eq(1)
     expect(page).to have_content "New Idea!"
     expect(page).to have_content "The best one ever!!"
-    expect(page).to have_content "Quality: swill"
+    expect(page).to have_content "his idea is: swill"
   end
 
   scenario "text fields are cleared after creating an idea", js: true do
