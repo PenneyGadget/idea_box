@@ -19,6 +19,6 @@ $(document).ready(function() {
   getIdeas();
   createIdea();
   deleteIdea();
+  upvoteIdea();
+  downvoteIdea();
 });
-
-var qualities = ['swill', 'plausible', 'genius'];
