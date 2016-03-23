@@ -71,14 +71,44 @@ RSpec.describe Api::V1::IdeasController, type: :controller do
   end
 
   describe 'PUT#update' do
-    xit 'responds with a 204' do
+    it 'responds with a 204 when updating quality' do
+      idea = create(:idea)
 
+      put :update, format: :json, id: idea.id, idea: { quality: 2 }
+
+      expect(response.status).to eq(204)
+      expect(response).to be_successful
     end
 
-    xit 'successfully updates the title and body of an idea' do
+    it 'responds with a 204 when updating title' do
+      idea = create(:idea)
 
+      put :update, format: :json, id: idea.id, idea: { title: 'New title!' }
+
+      expect(response.status).to eq(204)
+      expect(response).to be_successful
     end
 
-    xit 'successfull updates the quality of an idea'
+    it 'successfully updates the title and body of an idea' do
+      idea = create(:idea)
+
+      put :update, format: :json, id: idea.id, idea: { title: 'New title!',
+                                                       body: 'New body!'}
+
+      updated_idea = Idea.last
+
+      expect(updated_idea.title).to eq('New title!')
+      expect(updated_idea.body).to eq('New body!')
+    end
+
+    it 'successfully updates the quality of an idea' do
+      idea = create(:idea)
+
+      put :update, format: :json, id: idea.id, idea: { quality: 1 }
+
+      updated_idea = Idea.last
+
+      expect(updated_idea.quality).to eq(1)
+    end
   end
 end
