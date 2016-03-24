@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "A user can search for an idea", type: :feature do
+RSpec.describe "A user can case-insenstive search for an idea", type: :feature do
   scenario "the results are properly filterd", js: true do
     Idea.create({ title: "Sleep", body: "It's great" })
-    Idea.create({ title: "Sleeping in", body: "My favorite" })
+    Idea.create({ title: "Coffee", body: "After sleeping in." })
     Idea.create({ title: "Food", body: "Eat it" })
 
     visit root_path
@@ -15,7 +15,7 @@ RSpec.describe "A user can search for an idea", type: :feature do
 
     expect(page).to have_content("Sleep")
     expect(page).to have_content("It's great")
-    expect(page).to have_content("Sleeping in")
-    expect(page).to have_content("My favorite")
+    expect(page).to have_content("Coffee")
+    expect(page).to have_content("After sleeping in.")
   end
 end

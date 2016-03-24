@@ -1,12 +1,8 @@
-class Api::V1::IdeasController < ApplicationController
+class Api::V1::IdeasController < Api::V1::BaseController
   respond_to :json
 
   def index
     respond_with Idea.all
-  end
-
-  def show
-
   end
 
   def create
@@ -14,8 +10,6 @@ class Api::V1::IdeasController < ApplicationController
 
     if @idea.save
       respond_with :api, :v1, @idea
-    else
-      respond_with @idea.errors.full_messages.join(", ")
     end
   end
 
